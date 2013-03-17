@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>.lj/random thoughts: {{ page.title }}</title>
+        <title>.lj/{{ page.title }}</title>
         <meta name="description" content="posts and random mutterings from john folley, aka jussinen">
         <meta name="viewport" content="width=device-width">
 
@@ -20,7 +20,7 @@
         
         <header class="site-header">
             <div class="heading">
-                <h1><a href="/">.lj</a></h1><h2>random thoughts</h2>
+                <h1><a href="/">.lj</a></h1><h2>{{ page.title }}</h2>
             </div>
         </header>
 
@@ -33,8 +33,7 @@
                     <nav class="pod">
                         <h4 class="list-heading">menu</h4>
                         <ul class="list">
-                            <li><a href="/">home</a></li>
-                            <li><a href="/blog">blog</a></li>
+                            <li><a href="/">blog</a></li>
                             <li><a href="/about">about me</a></li>
                             <li><a href="/projects">projects</a></li>
                         </ul>
@@ -42,9 +41,9 @@
                     <div class="pod">
                         <h4 class="list-heading">tags</h4>
                         <ul class="list">
-                            <li><a href="/tags/web">web dev</a></li>
-                            <li><a href="/tags/lds">lds stuff</a></li>
-                            <li><a href="/tags/random">ramblings</a></li>
+                            <li><a href="/web-dev.html">web dev</a></li>
+                            <li><a href="/lds.html">lds stuff</a></li>
+                            <li><a href="/ramblings.html">ramblings</a></li>
                         </ul>
                     </div>
                     <div class="pod">
@@ -63,7 +62,7 @@
         
         
         <footer>
-            <p class="copyright">&copy; John Folley 2013</p>
+            <p class="copyright">&copy; John Folley {{ site.time | date: '%Y' }}</p>
         </footer>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>

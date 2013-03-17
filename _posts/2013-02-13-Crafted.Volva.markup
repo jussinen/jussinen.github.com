@@ -1,14 +1,10 @@
 ---
-layout: default
+layout: post
 title: "Crafted.Volva&#58; Basic authentication module for IIS7"
+tags: web-dev
+date: 2013-02-12
+author: John Folley
 ---
-<article class="post">
-	<header class="article-heading">
-		<h1>
-			<a href="{{ page.url }}">Crafted.Volva: Basic authentication module for IIS7</a>
-		</h1>
-		<span class="meta-information">by John Folley on 12th of Feb 2013</span>
-	</header>
 	<h2>Why a basic authentication module for IIS7?</h2>
 	<p>In IIS6, ASP.Net is used more as a plugin to IIS, where requests are passed to the ASP.Net process after going through the IIS process. </p>
 	<p>In II7, Microsoft introduced the concept of "integrated pipeline" and "Classic". Whereas Classic acts in the same way as IIS6, using "integrated pipeline" means that requests are handled by ASP.Net directly. </p>
@@ -61,18 +57,3 @@ title: "Crafted.Volva&#58; Basic authentication module for IIS7"
 		5. Set BasicAuthenticationIsEnabled="false"  
 	</p>
 	<p>The last two ways of removing are advised as this allows you to use the module whenever you need by simply re-adding the HTTP module or changing the config setting.  </p>
-	<span class="meta-information">Tags: <a href="#">web dev</a></span>
-	<div id="disqus_thread"></div>
-	<script type="text/javascript">
-		var disqus_shortname = 'jussinen'; 
-
-		(function() {
-			var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-			dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-		})();
-	</script>
-	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-	<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-
-</article>
