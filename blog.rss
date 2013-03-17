@@ -14,7 +14,7 @@
 	{% for post in site.posts %}
 		<entry>
 			<title>{{ post.title }}</title>
-			<link href="http://jussinen.com{{ post.url }}/"/>
+			<link href="http://jussinen.com{{ post.url }}"/>
 			<updated>{{ post.date | date_to_xmlschema }}</updated>
 			<id>http://jussinen.com{{ post.url }}/</id>
 			<summary type="html">{{ post.summary | xml_escape }}</summary>
