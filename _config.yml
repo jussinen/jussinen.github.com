@@ -1,0 +1,6 @@
+auto: false
+server: false
+markdown: rdiscount
+exclude:
+- .gitignore
+- README.md
