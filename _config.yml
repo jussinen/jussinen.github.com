@@ -1,7 +1,8 @@
 auto: false
 server: false
 markdown: rdiscount
-paginate: 10 
+paginate: 10
+httppath:  "http://jussinen.com"
 exclude:
 - .gitignore
 - README.md
