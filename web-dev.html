@@ -10,7 +10,8 @@ title: "web-dev"
 		</h1>
 		<span class="meta-information">by {{ post.author }} on {{ post.date | date: "%B %d %Y" }}</span>
 	</header>
-	{{ post.content }}
+	{{ post.summary }}
+	<a href="{{ post.url }}">Read more...</a>
 	<span class="meta-information">
 	Tags: 
 	{% for tag in post.tags %}
