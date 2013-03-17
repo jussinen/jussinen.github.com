@@ -4,6 +4,7 @@ title: "Crafted.Volva&#58; Basic authentication module for IIS7"
 tags: web-dev
 date: 2013-02-12
 author: John Folley
+description: "The Crafted.Volva project adds basic authentication for IIS7 test sites"
 summary: "<h2>Why a basic authentication module for IIS7?</h2><p>In IIS6, ASP.Net is used more as a plugin to IIS, where requests are passed to the ASP.Net process after going through the IIS process.</p><p>In II7, Microsoft introduced the concept of 'integrated pipeline' and 'Classic'. Whereas Classic acts in the same way as IIS6, using 'integrated pipeline' means that requests are handled by ASP.Net directly. </p><p>In .Net, different authentication methods use the standard way of setting an authenticated user to the Page using the Principal. This then affects authentication, permissions rules set in web.config. </p><p>In IIS6, it is possible to use IIS authentication (basic) to secure a site behind a password, which is useful for test sites. In IIS7 'integrated pipeline', ASP.Net handles all the authentication methods. </p><p>This means that you can only set one method of authentication as there can be only one Principal set to the Page. So setting up Basic authentication will cause ASP.Net to consider the user as signed in as with Forms Authentication, which means that secured areas of the website no longer get redirected to a login page using Forms Authentication. </p>"
 ---
 	<h2>Why a basic authentication module for IIS7?</h2>
