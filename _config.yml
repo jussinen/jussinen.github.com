@@ -1,6 +1,7 @@
 auto: false
 server: false
 markdown: rdiscount
+paginate: 10 
 exclude:
 - .gitignore
 - README.md
