@@ -1,0 +1,25 @@
+{
+	"folders":
+	[
+		{
+			"path": "/C/Users/jfolley/Documents/GitHub/jussinen.github.com"
+		}
+	],
+	"file_exclude_patterns":[
+	   "._*",
+	   "*.bak",
+	   "*.ico",
+	   "*.sample",
+	   "*.swf",
+	   "*.tar",
+	   "*.tgz",
+	   "*.zip"
+	],
+	"build_systems": [
+		{
+			"name": "jekyll",
+			"cmd": ["jekyll"],
+			"shell": true
+		}
+	]
+}

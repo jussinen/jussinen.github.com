@@ -1,0 +1,336 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "lds.html",
+			"settings":
+			{
+				"buffer_size": 623,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/jfolley/AppData/Roaming/Sublime Text 2/Packages/User/Jekyll.sublime-build",
+			"settings":
+			{
+				"buffer_size": 38,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "_site/lds.html",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "jussinen.github.com",
+			"settings":
+			{
+				"buffer_size": 341,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "jekyll",
+	"command_palette":
+	{
+		"height": 104.0,
+		"selected_items":
+		[
+			[
+				"build",
+				"Build: Build"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"package control: list",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"",
+				"Package Control: List Packages"
+			]
+		],
+		"width": 528.0
+	},
+	"console":
+	{
+		"height": 153.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/jfolley/AppData/Roaming/Sublime Text 2/Packages/User/Jekyll.sublime-build",
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/_site/jussinen.github.com",
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/_site/lds.html",
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/lds.rss",
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/ramblings.rss",
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/web-dev.html",
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/css/main.css",
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/lds.html",
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/_layouts/default.html",
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/ramblings.html",
+		"/C/Users/jfolley/AppData/Roaming/Sublime Text 2/Packages/User/jekyll.sublime-build",
+		"/C/Users/jfolley/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/jfolley/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/jussinen.github.com",
+		"/C/Users/jfolley/AppData/Roaming/Sublime Text 2/Packages/Alignment/Base File.sublime-settings",
+		"/C/Users/jfolley/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/jfolley/Documents/Projects/www.clickcleaning.co.uk/branches/design/www.clickcleaning.co.uk/www.clickcleaning.co.uk/css/_checkout.scss",
+		"/C/Users/jfolley/Documents/Projects/Reallymoving-Live/reallymoving/forms/conveyancing.aspx.cs",
+		"/C/Users/jfolley/Documents/Projects/Refresh/Refresh/CMSAdminControls/CKeditor/plugins/templates/templates/default.js",
+		"/C/Users/jfolley/Documents/Projects/Reallymoving-Live/reallymoving/forms/conveyancing-a.aspx.cs",
+		"/C/Users/jfolley/Documents/Projects/BathroomHeaven/BathroomHeaven.sln",
+		"/C/Users/jfolley/Documents/Projects/BathroomHeaven/BathroomHeaven/404.aspx.cs",
+		"/C/Users/jfolley/Documents/Projects/BathroomHeaven/BathroomHeaven/404.aspx"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"console"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "lds.html",
+					"settings":
+					{
+						"buffer_size": 623,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/jfolley/AppData/Roaming/Sublime Text 2/Packages/User/Jekyll.sublime-build",
+					"settings":
+					{
+						"buffer_size": 38,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								36,
+								1
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "_site/lds.html",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "jussinen.github.com",
+					"settings":
+					{
+						"buffer_size": 341,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								188,
+								188
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 196.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"lds.html",
+				"lds.html"
+			],
+			[
+				"ramb",
+				"ramblings.html"
+			],
+			[
+				"web",
+				"web-dev.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 370.0,
+	"status_bar_visible": true
+}
