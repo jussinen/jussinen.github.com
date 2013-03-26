@@ -1,0 +1,6 @@
+TODO:
+
+1. Fill static pages such as about me and projects
+2. Check SEO
+3. Add posts
+4. Minify / Combine Assets
