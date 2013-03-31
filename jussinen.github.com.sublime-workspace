@@ -8,51 +8,96 @@
 	"buffers":
 	[
 		{
+			"file": "web-dev.html",
+			"settings":
+			{
+				"buffer_size": 659,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "lds.html",
 			"settings":
 			{
-				"buffer_size": 623,
+				"buffer_size": 639,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/Users/jfolley/AppData/Roaming/Sublime Text 2/Packages/User/Jekyll.sublime-build",
+			"file": "ramblings.html",
 			"settings":
 			{
-				"buffer_size": 38,
+				"buffer_size": 669,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "_site/lds.html",
+			"file": "todo.txt",
 			"settings":
 			{
-				"buffer_size": 0,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "jussinen.github.com",
-			"settings":
-			{
-				"buffer_size": 341,
-				"line_ending": "Unix"
+				"buffer_size": 120,
+				"line_ending": "Windows",
+				"name": "TODO:"
 			}
 		}
 	],
 	"build_system": "jekyll",
 	"command_palette":
 	{
-		"height": 104.0,
+		"height": 58.0,
 		"selected_items":
 		[
 			[
-				"build",
-				"Build: Build"
+				"git qui",
+				"Git: Quick Commit"
+			],
+			[
+				"git add",
+				"Git: Add Current File"
+			],
+			[
+				"git comm",
+				"Git: Commit"
+			],
+			[
+				"git status",
+				"Git: Status"
+			],
+			[
+				"git stat",
+				"Git: Status"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"git commit",
+				"Git: Quick Commit"
+			],
+			[
+				"git reset",
+				"Git: Reset (unstage) All"
+			],
+			[
+				"git add .",
+				"Git: Add..."
+			],
+			[
+				"git",
+				"Git: Status"
 			],
 			[
 				"install",
 				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"build",
+				"Build: Build"
 			],
 			[
 				"list",
@@ -88,15 +133,16 @@
 	},
 	"file_history":
 	[
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/jussinen.github.com.sublime-project",
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/_layouts/default.html",
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/web-dev.html",
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/ramblings.rss",
 		"/C/Users/jfolley/AppData/Roaming/Sublime Text 2/Packages/User/Jekyll.sublime-build",
 		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/_site/jussinen.github.com",
 		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/_site/lds.html",
 		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/lds.rss",
-		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/ramblings.rss",
-		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/web-dev.html",
 		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/css/main.css",
 		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/lds.html",
-		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/_layouts/default.html",
 		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/ramblings.html",
 		"/C/Users/jfolley/AppData/Roaming/Sublime Text 2/Packages/User/jekyll.sublime-build",
 		"/C/Users/jfolley/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
@@ -137,7 +183,7 @@
 		"replace_history":
 		[
 		],
-		"reverse": false,
+		"reverse": true,
 		"show_context": true,
 		"use_buffer2": true,
 		"whole_word": false,
@@ -146,22 +192,23 @@
 	"groups":
 	[
 		{
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "lds.html",
+					"file": "web-dev.html",
 					"settings":
 					{
-						"buffer_size": 623,
+						"buffer_size": 659,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								112,
+								132
 							]
 						],
 						"settings":
@@ -177,23 +224,24 @@
 				},
 				{
 					"buffer": 1,
-					"file": "/C/Users/jfolley/AppData/Roaming/Sublime Text 2/Packages/User/Jekyll.sublime-build",
+					"file": "lds.html",
 					"settings":
 					{
-						"buffer_size": 38,
+						"buffer_size": 639,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								36,
-								1
+								115,
+								115
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -203,25 +251,24 @@
 				},
 				{
 					"buffer": 2,
-					"file": "_site/lds.html",
+					"file": "ramblings.html",
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 669,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								239,
+								239
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -231,24 +278,24 @@
 				},
 				{
 					"buffer": 3,
-					"file": "jussinen.github.com",
+					"file": "todo.txt",
 					"settings":
 					{
-						"buffer_size": 341,
+						"buffer_size": 120,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								188,
-								188
+								120,
+								120
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"auto_name": "TODO:",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -261,11 +308,11 @@
 	],
 	"incremental_find":
 	{
-		"height": 0.0
+		"height": 36.0
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 36.0
 	},
 	"layout":
 	{
@@ -294,6 +341,10 @@
 	{
 		"height": 196.0
 	},
+	"output.git":
+	{
+		"height": 130.0
+	},
 	"replace":
 	{
 		"height": 0.0
@@ -305,12 +356,20 @@
 		"selected_items":
 		[
 			[
-				"lds.html",
+				"ramb",
+				"ramblings.html"
+			],
+			[
+				"lds",
 				"lds.html"
 			],
 			[
-				"ramb",
-				"ramblings.html"
+				"_layou",
+				"_layouts/default.html"
+			],
+			[
+				"lds.html",
+				"lds.html"
 			],
 			[
 				"web",
