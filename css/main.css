@@ -105,8 +105,9 @@ a:visited{
 }
 
 .list dt{
-    width: 7em;
+    min-width: 7em;
 }
+
 .list li:before,
 .list dt:before{
     content: '_ ';
