@@ -15,7 +15,7 @@ layout: default
 		<a href="/{{ tag }}.html">{{ tag }}</a>
 	{% endfor %}
 	</span>
-	{% if !page.disable_comments %}
+	{% if page.allow_comments %}
 		<div id="disqus_thread"></div>
 		<script type="text/javascript">
 			var disqus_shortname = 'jussinen'; 
