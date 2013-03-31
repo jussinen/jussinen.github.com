@@ -1,66 +1,74 @@
 /* ---------------------------------- global */
 body {
-    background: #151515 url("/img/bkg.png") 0 0;
-    color: #eaeaea;
-    font: 16px;
+    background : #151515 url("/img/bkg.png") 0 0;
+    color      : #eaeaea;
+    font       : 16px;
     line-height: 1.5;
     font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
 }
 
 
-.site-header, footer{
+.site-header,
+.footer{
   background: rgba(0, 0, 0, 0.1);
-  width: 100%;
-  padding: 20px 0;
+  width     : 100%;
+  padding   : 20px 0;
 }
 
 .site-header{
-  margin: 0 0 40px 0;
+  margin       : 0 0 40px 0;
   border-bottom: 1px dashed #b5e853;
 }
 
-footer{
-    border-top: 1px dashed #b5e853;
+.footer{
+    border-top    : 1px dashed #b5e853;
     padding-bottom: 10px;
-    margin-top: 20px;
+    margin-top    : 20px;
 }
 
-.site-header .heading, footer .copyright{
-    margin-left: auto;
+.site-header .heading,
+.footer .copyright{
+    margin-left : auto;
     margin-right: auto;
-    width: 940px;
+    width       : 940px;
 }
 
-.site-header h1, .site-header h2, .site-header h3{
+.site-header h1,
+.site-header h2,
+.site-header h3{
     display: inline-block;
 }
 
 .site-header h1 {
-  font-size: 30px;
-  line-height: 1.5;
-  margin: 0 0 0;
-  font-weight: bold;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  color: #b5e853;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
-               0 0 5px rgba(181, 232, 83, 0.1),
-               0 0 10px rgba(181, 232, 83, 0.1);
-  letter-spacing: -1px;
+  font-size             : 30px;
+  line-height           : 1.5;
+  margin                : 0 0 0;
+  font-weight           : bold;
+  font-family           : Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  color                 : #b5e853;
+  letter-spacing        : -1px;
   -webkit-font-smoothing: antialiased;
+  text-shadow           : 0 1px 1px rgba(0, 0, 0, 0.1),
+                          0 0 5px rgba(181, 232, 83, 0.1),
+                          0 0 10px rgba(181, 232, 83, 0.1);
 }
 
-.site-header h2, .site-header h3 {
-  font-size: 18px;
+.site-header h2,
+.site-header h3 {
+  font-size  : 18px;
   font-weight: 300;
-  color: #666;
+  color      : #666;
 }
 
-.site-header h2:before, .site-header h3:before{
-    content:  '/';
+.site-header h2:before,
+.site-header h3:before{
+    content  :  '/';
     font-size: 18px;
 }
 
-a, a:hover, a:visited{
+a,
+a:hover,
+a:visited{
   color: #b5e853;  
 }
 
@@ -74,16 +82,21 @@ a, a:hover, a:visited{
     font-size: 16px;
 }
 
-.list, .list li, .list dd, .list dt{
+.list,
+.list li,
+.list dd,
+.list dt{
     list-style: none;
-    margin: 0;
+    margin    : 0;
     font-size: 16px;
 }
 
 .list dt{
     font-size: 14px;
 }
-.list dd, .list dt{
+
+.list dd,
+.list dt{
     float: left;
 }
 
@@ -94,7 +107,8 @@ a, a:hover, a:visited{
 .list dt{
     width: 7em;
 }
-.list li:before, .list dt:before{
+.list li:before,
+.list dt:before{
     content: '_ ';
     /*color: #b5e853;*/
 }
@@ -102,34 +116,37 @@ a, a:hover, a:visited{
 .list{
     margin: 0 0 10px 0;
 }
+
 .pod{
-  background: rgba(0, 0, 0, 0.9);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  padding: 10px;
-  border-radius: 2px;
-  -moz-border-radius: 2px;
+  background           : rgba(0, 0, 0, 0.9);
+  border               : 1px solid rgba(255, 255, 255, 0.15);
+  padding              : 10px;
+  border-radius        : 2px;
+  -moz-border-radius   : 2px;
   -webkit-border-radius: 2px;
-  text-wrap: normal;
-  overflow: auto;
-  overflow-y: hidden;
-  margin: 0 0 20px 0;
+  text-wrap            : normal;
+  overflow             : auto;
+  overflow-y           : hidden;
+  margin               : 0 0 20px 0;
 }
 
 /* ---------------------------------- Post styling */
+
 .post h1{
-    font-size:18px;
+    font-size    :18px;
     margin-bottom: 0;
 }
 
 .post .article-heading{
-  border-bottom: 1px dashed #b5e853;
+  border-bottom : 1px dashed #b5e853;
   padding-bottom: 0.5em;
+  margin-bottom : :1em;
 }
 
 .meta-information{
-    display: block;
+    display   : block;
     text-align: right;
-    font-size: 12px;
+    font-size : 12px;
 }
 
 .post h2{
@@ -140,13 +157,13 @@ a, a:hover, a:visited{
   max-width: 100%
 }
 
-blockquote {
+.post blockquote {
   color: #aaa;
   padding-left: 10px;
   border-left: 1px dotted #666;
 }
 
-pre {
+.post pre {
   background: rgba(0, 0, 0, 0.9);
   border: 1px solid rgba(255, 255, 255, 0.15);
   padding: 10px;
@@ -160,7 +177,7 @@ pre {
   overflow-y: hidden;
 }
 
-code{
+.post code{
     color: #5BA1CF;
     background-color: #1B2426;
     border: none;

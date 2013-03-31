@@ -5,7 +5,7 @@
 
     John Folley @jussinen
 
-# TECHNOLOGY COLOPHON
+# TECHNOLOGY USED
 
     HTML5, CSS3
     jQuery, Modernizr
