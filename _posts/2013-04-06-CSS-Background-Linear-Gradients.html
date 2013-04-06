@@ -1,0 +1,75 @@
+---
+layout: post
+title: "CSS Background Linear Gradients"
+tags: web-dev
+date: 2013-04-06
+author: John Folley
+allow_comments: true
+description: "Easy way to implement CSS background linear gradients"
+summary: "<p>As you may know, CSS gradient are becoming more prevalent (and will be more so with IE10 now supporting them <a href='http://caniuse.com/#feat=css-gradients' target='_blank'>caniuse.com</a> ). They're an useful way to have a repeating gradient background without the extra cost of a resource.</p>"
+---
+<p>As you may know, CSS gradient are becoming more prevalent (and will be more so with IE10 now supporting them <a href="http://caniuse.com/#feat=css-gradients" target='_blank'>caniuse.com</a> ). They’re an useful way to have a repeating gradient background without the extra cost of a resource.</p>
+<p>Our design team at Crafted have been good to provide these to me : the way he produces them is by using <a href="http://www.colorzilla.com/gradient-editor/" target='_blank'>Colorzilla Gradient Editor</a>. He usually takes a screenshot of the gradient image and uses the "Import from image" function, cleaning up in the editor if need be. You can - if you have a PSD file - slice the gradient directly and concisely also.</p>
+<p>As an example, here’s the code generated for a green gradient:</p>
+<pre class="brush: css">
+background: #9bc847; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSI2NSUiIHN0b3AtY29sb3I9IiM5YmM4NDciIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI2NSUiIHN0b3AtY29sb3I9IiMyZWE4MTUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  #9bc847 65%, #2ea815 65%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(65%,#9bc847), color-stop(65%,#2ea815)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #9bc847 65%,#2ea815 65%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #9bc847 65%,#2ea815 65%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #9bc847 65%,#2ea815 65%); /* IE10+ */
+background: linear-gradient(to bottom,  #9bc847 65%,#2ea815 65%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bc847', endColorstr='#2ea815',GradientType=0 ); /* IE6-8 */
+</pre>
+
+<p>As you can notice, the background gradient will be applied to IE6-10, FF 3.6+, Chrome10+, Safari4+ and Opera 11+ with a solid color fallback for other browsers (which are very rare anyways).</p>
+
+<p>If you are using <code>SASS</code>, you can implement this by using <code>@extend</code> quite easily.</p>
+
+<pre class="brush: css">
+.green-gradient{
+	background: #9bc847; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */ // => not required due to the override below in .lt-ie9
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSI2NSUiIHN0b3AtY29sb3I9IiM5YmM4NDciIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI2NSUiIHN0b3AtY29sb3I9IiMyZWE4MTUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #9bc847 65%, #2ea815 65%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(65%,#9bc847), color-stop(65%,#2ea815)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #9bc847 65%,#2ea815 65%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #9bc847 65%,#2ea815 65%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #9bc847 65%,#2ea815 65%); /* IE10+ */
+	background: linear-gradient(to bottom,  #9bc847 65%,#2ea815 65%); /* W3C */
+
+   .lt-ie9 &{ // if you’ve set HTML classes as per HTML5 boilerplate
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bc847', endColorstr='#2ea815',GradientType=0 ); /* IE6-8 */
+	}
+}
+
+.button{
+       @extend .green-gradient; // In the class you wish to use the gradient
+}
+</pre>
+
+<p>This will generate the following CSS:</p>
+
+<pre class="brush: css">
+.green-gradient,
+.button{
+	background: #9bc847;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSI2NSUiIHN0b3AtY29sb3I9IiM5YmM4NDciIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI2NSUiIHN0b3AtY29sb3I9IiMyZWE4MTUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #9bc847 65%, #2ea815 65%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(65%,#9bc847), color-stop(65%,#2ea815));
+	background: -webkit-linear-gradient(top,  #9bc847 65%,#2ea815 65%);
+	background: -o-linear-gradient(top,  #9bc847 65%,#2ea815 65%);
+	background: -ms-linear-gradient(top,  #9bc847 65%,#2ea815 65%);
+	background: linear-gradient(to bottom,  #9bc847 65%,#2ea815 65%);
+}
+
+
+.lt-ie9 .green-gradient,
+.lt-ie9 .button,
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bc847', endColorstr='#2ea815',GradientType=0 );
+}
+</pre>
+
+<p>You could use a <code>@mixin</code> also however these add all the different background rules to your current CSS rule, making your CSS larger and giving the browser more CSS rules to process.

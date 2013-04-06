@@ -1,0 +1,90 @@
+---
+layout: post
+title: "Crafted.Config&#58; Creating custom configuration sections"
+tags: web-dev
+date: 2013-02-03
+author: John Folley
+allow_comments: true
+description: "The Crafted.Config project adds helper methods for creating custom configuration sections"
+summary: "<p>Back in .Net 1.1, creating custom sections in web.config was quite difficult. In .Net Framework 2.0 and greater, this is now a lot easier. However when it comes to accessing text elements or saving values, there are a couple of additional steps.</p><p>With this library, the steps to saving a configuration value back to the web.config is made easier.</p>"
+---
+<p>Back in .Net 1.1, creating custom sections in web.config was quite difficult. In .Net Framework 2.0 and greater, this is now a lot easier.</p>
+<p>However when it comes to accessing text elements or saving values, there are a couple of additional steps.</p>
+<p>With this library, the steps to saving a configuration value back to the web.config is made easier.</p>
+<h2Usage</h2>
+<p>To use, first of all, include the reference to the Crafted.Config assemby in your project.</p>
+<p>First, create your configuration class. This will be the same type as ones created using ConfigurationSections in .Net 2.0. Just decorate the class with a Crafted.Configuration.Attributes.ConfigSection attribute, with the name of the custom section you're building.</p>
+<p>Other than this the only differences lies in the additional ConfigElements that can be used such as DefaultTextConfigElement.</p>
+
+<pre class="brush: csharp">  
+[Crafted.Configuration.Attributes.ConfigSection("webConfig")]  
+public class WebConfig : System.Configuration.ConfigurationSection {
+
+	[ConfigurationProperty(
+		"MyConfigValue",
+		IsRequired = true,
+		DefaultValue = "Nothing")]
+	public string MyConfigValue {
+		get {
+			return this["MyConfigValue"].ToString();
+		}
+		set {
+			this["MyConfigValue"] = value;
+		}
+	}
+
+	public string Something{
+		get{
+			return _something.Content;
+		}
+		set {
+			_something.Content = value;
+		}
+	}
+
+	[ConfigurationProperty("Something")]
+	[TextConfigurationProperty]
+	public DefaultTextConfigElement Something {
+		get {
+			return (DefaultTextConfigElement)this["Something"];
+		}
+	}
+}  
+</pre>
+
+<p>Next, update your web.config with your custom section. Next add the new section in the list of config sections:</p>
+
+<pre class="brush: xml">
+&lt;section name="webConfig" type="ConfigTest.WebConfig" />
+</pre>
+
+<p>Then add your configuration section to the web.config:</p>
+
+<pre class="brush: xml">
+&lt;webConfig MyConfigValue="17:18">  
+&lt;Something>Other</Something>  
+&lt;/webConfig></pre>
+
+<p>Now to use the values all you need to do is wrap your Configuration class with Crafted.Configuration.Config<T> where T is your class. You can then access and save the values as following:</p>
+
+<pre class="brush: csharp">
+using(Crafted.Configuration.Config&lt;WebConfig> c
+		 = new Crafted.Configuration.Config&lt;WebConfig>()) {  
+    c.Values.MyConfigValue = DateTime.Now.ToShortTimeString();  
+    c.Values.Something.Content = "Other";  
+    c.Save();  
+}
+
+using(Crafted.Configuration.Config&lt;WebConfig> c
+		 = new Crafted.Configuration.Config&lt;WebConfig>()) {  
+    litConfig.Text = c.Values.Something.ToString();  
+}
+</pre>
+<h2>Deprecated</h2>
+<p>Please note that the Crafted.Config namespace is deprecated and is included for backward compatibilty.</p>
+<h2>Where to find it</h2>
+<p>The source is published on github.com here: <a href="https://github.com/jussinen/crafted.config" target="_blank">Crafted.Config</a></p>
+<p>You can also install it using nuget</p>
+<code class="nuget">
+Install-Package Crafted.Config
+</code>

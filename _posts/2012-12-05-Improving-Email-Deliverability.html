@@ -1,0 +1,69 @@
+---
+layout: post
+title: "Improving Email Deliverability"
+tags: web-dev
+date: 2012-12-05
+author: John Folley
+allow_comments: true
+description: "Improving Email Deliverability is important for business but also for suppressing general spam"
+summary: "<p>At Crafted, we create and manage many sites that send emails to users for a variety of reasons. For example, when a customer buys from a website, the system can be set up to send an email confirming their purchase.</p><p>Making sure that these emails end up in users' inboxes, instead of being marked as spam, bouncing, being rejected, or, in a worst case scenario, resulting in the site being blacklisted by ISPs, depends on a number of technical and content-based considerations.</p><p>As everyone with an email account knows, email spam is a very real problem; according to the Message Anti-Abuse Working Group, <a class='offsite-link-inline' href='http://en.wikipedia.org/wiki/Email_spam' target='_blank'>between 88-92% of email messages sent in the first half of 2010 were spam</a>.</p><p>With that in mind, it's natural and essential for email providers to screen emails received in order to filter out spam. As senders of legitimate transactional emails, it's also our responsibility to make sure that our emails adhere to industry standards to enable email providers, such as Microsoft, Yahoo and Google, to more easily sort the junk emails from those that have a right to be in inboxes.</p><p>Unfortunately, only email providers know their spam filter algorithms, and they like to keep them under wraps. While there are a number of variables that we do know about, no email is ever guaranteed to arrive in someone's inbox.</p><p>So, how can you increase the chances of your emails making it to your intended recipients?</p>"
+---
+<h2>Why worry about email deliverability?</h2>
+<p>At Crafted, we create and manage many sites that send emails to users for a variety of reasons. For example, when a customer buys from a website, the system can be set up to send an email confirming their purchase.</p>
+<p>Making sure that these emails end up in users' inboxes, instead of being marked as spam, bouncing, being rejected, or, in a worst case scenario, resulting in the site being blacklisted by ISPs, depends on a number of technical and content-based considerations.</p>
+<p>As everyone with an email account knows, email spam is a very real problem; according to the Message Anti-Abuse Working Group, <a href="http://en.wikipedia.org/wiki/Email_spam" target="_blank">between 88&ndash;92% of email messages sent in the first half of 2010 were spam</a>.</p>
+<p>With that in mind, it's natural and essential for email providers to screen emails received in order to filter out spam. As senders of legitimate transactional emails, it's also our responsibility to make sure that our emails adhere to industry standards to enable email providers, such as Microsoft, Yahoo and Google, to more easily sort the junk emails from those that have a right to be in inboxes.</p>
+<p>Unfortunately, only email providers know their spam filter algorithms, and they like to keep them under wraps. While there are a number of variables that we do know about, no email is ever guaranteed to arrive in someone's inbox.</p>
+<p>So, how can you increase the chances of your emails making it to your intended recipients?</p>
+<h2>MX Blacklist</h2>
+<p>First of all, it's important to check that the IP Address used for sending email is not blacklisted. One great tool to do this is <a href="http://www.mxtoolbox.com/blacklist.aspx" target="_blank">MX Tool Box</a>.</p>
+<p>Note that email is always sent from the server's primary IP address - having an additional static IP address may be listed in the mail headers, but the server's primary IP address will always be mentioned. So, be sure to check both IP addresses.</p>
+<h2>PTR Records / Reverse DNS Lookup</h2>
+<p>When a server sends an email to another, it sends a HELO message. This HELO message is checked against the PTR record of the IP address sending email. So if you're sending from <code>xxx.xxx.xxx.xxx</code>, you should set up an appropriate PTR record, such as example.com or mail.example.com, and make sure that your mail server sends "example.com" / "mail.example.com" (as appropriate) as the HELO message.</p>
+<h2>SPF Record</h2>
+<p>SPF (Sender Policy Framework) is a system where the IP address sending the email is checked against a list of servers mentioned in the DNS records of the domain listed in the FROM header. DNS records are public, but can only be changed by the domain owner, proving that the email has been sent from an authorized server.</p>
+<p>So, if you're sending emails from confirm@example.com, the mail server receiving the email will check that the IP address is listed in the SPF record of example.com.</p>
+<p>An SPF record is created as a TXT record with quite a specific syntax. <a href="http://www.openspf.org/" target="_blank">Open SPF</a> has details on the syntax required.</p>
+<p>An example SPF record will look like this: <code>v=spf1 a mx ip4:xxx.xxx.xxx.xxx ~all</code></p>
+<p>You can specify the course of action to take in the final part of the SPF record. The different options are:</p>
+<p>
+<ul>
+<li><code>-all</code> : (fail) reject all emails that have been sent by a server not listed</li>
+<li><code>~all</code> : (softfail) treat emails that have been sent by a server not listed with caution</li>
+<li>other options include <code>+all</code> and <code>?all</code> but these won't help as they offer no instruction to the receiving mail server.</li>
+</ul>
+</p>
+<h2>SenderID</h2>
+<p>SenderID is a technology built by Microsoft and is similar to SPF. Both technologies share a similar syntax and, in the absence of a SenderID record, the SPF record is treated as a SenderID record by servers implementing SenderID checks (Hotmail for example).</p>
+<p>While both share a similar syntax, they differ in the internal implementation of the technologies. However, from a mail sending point of view, I've found that a valid SPF record will be fine. You'll need to be careful though as I've also found that SPF is more tolerant than SenderID; including a domain in the SPF record that doesn't have a SPF record will result in an error, whilst this is perfectly valid for email providers using SPF.</p>
+<p>You can find out more about SenderID on <a href="https://www.microsoft.com/mscorp/safety/technologies/senderid/default.mspx" target="_blank">Microsoft's website</a>:</p>
+<h2>DomainKeys / DKIM</h2>
+<p>DomainKeys and DKIM are similar technologies that authenticate an email's content rather than just the FROM header. They use the concept of encrypted signature with a public key listed in the domain's DNS records.</p>
+<p>Basically, the email message will include an additional header listing the DomainKey's domain, the headers being signed and the encrypted signature.</p>
+<p>Receiving mail servers use the public key to confirm that the message has been signed by the domain owner's private key. This is sometimes visible in certain email providers such as Gmail, which will display the "signed by" header.</p>
+<h2>Feedback loop (FBL)</h2>
+<p>Email providers such as AOL require a feedback loop system in place. This is a header in the email message that directs the receiving mail server to an email address or web service where a "spam complaint" can be made. Details about this can be found on <a href="http://postmaster.aol.com/Postmaster.FeedbackLoop.php" target="_blank">AOL's website</a>.</p>
+<p>In essence, implementing this technology shows that you address complaints made by users and servers about your emails. This isn't only a positive factor for mail receiving servers, but may also help you to understand when and how email messages are being regarded as spam by either humans or servers.</p>
+<h2>Whitelisting</h2>
+<p>Major ISPs allow for mail sending companies to apply to be included in a whitelist. Each ISP will manage their own whitelist and have different requirements to be included. <a href="http://www.dnswl.org/" target="_blank">Public whitelists are also available</a>.</p>
+<h2>IP Reputation</h2>
+<p>When sending email for the first time, it's important to remember that your IP address may not have any previous history of sending email. While this can be seen as a positive thing (it hasn't been used to send spam before), mail receiving servers don't have any information yet as to whether your server is good or bad, so it'll treat your email with caution. This may cause delays and rate limiting.</p>
+<p>It's often recommended to &lsquo;warm' an IP address before using it intensively. By sending a smaller quantity of email, you'll allow mail servers to get to know your server and determine that it's good.</p>
+<h2>Content</h2>
+<p>One of the most important factors that ISPs use to determine whether an email is spam is its content.</p>
+<p>Email content should usually be sent in both HTML and plain-text formats. HTML versions should include a reasonable amount of content, especially when including an image. This is because spam emails will sometimes include an image containing the spam content with little or no text recognisable by the mail server.</p>
+<p>Email content should avoid certain phrases and words usually used in spam emails where possible and include the following pieces of information:</p>
+<p>
+<ul>
+<li>an explanation of why the user is receiving the email</li>
+<li>a link / address that the user can use to unsubscribe themselves from receiving any future emails</li>
+<li>legal and contact information about the company sending the email, including the sender's physical location</li>
+<li>links to the Terms and Conditions and the Privacy Policy of the company sending the email.</li>
+</ul>
+</p>
+<p>This information is required in the United States by the <a href="http://www.spamlaws.com/federal/can-spam.shtml" target="_blank">CAN-SPAM Act</a>.</p>
+<h2>Conclusion</h2>
+<p>There are a number of tools that you can use to reduce the likelihood of your emails being marked as spam, with port25.com reports being a good place to start. However, reading through the SMTP logs for any errors and looking over a received email's mail headers will give the best idea of why the email was rejected or marked as spam.</p>
+<p>Different email providers use different techniques, so it's best to cater for all. You can find a breakdown of technologies used by email providers on the <a href="http://mailchimp.com/about/authentication/" target="_blank">Mailchimp website</a>.</p>
+<p>It's essential that you measure the deliverability of emails. You could invest in a bespoke solution to help you with this or use a third party SMTP service such as Sendgrid, which will provide vital statistics concerning emails.</p>
+<p>At Crafted, we use Sendgrid to send transactional emails on behalf of our clients. The services provides PTR records, DomainKeys / DKIM, Feedback loops and whitelisting with major ISPs, as well as providing a great interface to measure the deliverability of emails.</p>

@@ -1,12 +1,14 @@
 ---
 layout: default
 title: "blog"
+description: "My blog, random thoughts and mistakes for all to see"
+summary: "My blog, random thoughts and mistakes for all to see"
 ---
 {% for post in paginator.posts %}
 <article class="post">
 	<header class="article-heading">
 		<h1>
-			<a href="{{ post.url }}">Crafted.Volva: Basic authentication module for IIS7</a>
+			<a href="{{ post.url }}">{{ post.title }}</a>
 		</h1>
 		<span class="meta-information">by {{ post.author }} on {{ post.date | date: "%B %d %Y" }}</span>
 	</header>
