@@ -6,7 +6,7 @@ date: 2013-04-06
 author: John Folley
 allow_comments: true
 description: "A description of use in background linear gradients"
-summary: "<p>As you may know, CSS gradient are becoming more prevalent (and will be more so with IE10 now supporting them <a href="http://caniuse.com/#feat=css-gradients">caniuse.com</a> ). They’re an useful way to have a repeating gradient background without the extra cost of a resource.</p>"
+summary: "<p>As you may know, CSS gradient are becoming more prevalent (and will be more so with IE10 now supporting them <a href='http://caniuse.com/#feat=css-gradients'>caniuse.com</a> ). They're an useful way to have a repeating gradient background without the extra cost of a resource.</p>"
 ---
 <p>As you may know, CSS gradient are becoming more prevalent (and will be more so with IE10 now supporting them <a href="http://caniuse.com/#feat=css-gradients">caniuse.com</a> ). They’re an useful way to have a repeating gradient background without the extra cost of a resource.</p>
 <p>Our design team at Crafted have been good to provide these to me : the way he produces them is by using <a href="http://www.colorzilla.com/gradient-editor/">Colorzilla Gradient Editor</a>. He usually takes a screenshot of the gradient image and uses the "Import from image" function, cleaning up in the editor if need be. You can - if you have a PSD file - slice the gradient directly and concisely also.</p>
