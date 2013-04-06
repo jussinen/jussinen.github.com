@@ -8,36 +8,51 @@
 	"buffers":
 	[
 		{
-			"file": "web-dev.html",
+			"file": "projects.html",
 			"settings":
 			{
-				"buffer_size": 659,
+				"buffer_size": 900,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "lds.html",
+			"file": "css/main.css",
 			"settings":
 			{
-				"buffer_size": 639,
+				"buffer_size": 3276,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "ramblings.html",
+			"file": "js/main.js",
 			"settings":
 			{
-				"buffer_size": 669,
+				"buffer_size": 24,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "todo.txt",
+			"file": "_layouts/default.html",
 			"settings":
 			{
-				"buffer_size": 120,
-				"line_ending": "Windows",
-				"name": "TODO:"
+				"buffer_size": 5560,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "_layouts/post.html",
+			"settings":
+			{
+				"buffer_size": 1123,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "_posts/2013-02-13-Crafted.Volva.markup",
+			"settings":
+			{
+				"buffer_size": 4551,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -48,20 +63,44 @@
 		"selected_items":
 		[
 			[
-				"git qui",
+				"git q",
 				"Git: Quick Commit"
 			],
 			[
 				"git add",
-				"Git: Add Current File"
-			],
-			[
-				"git comm",
-				"Git: Commit"
+				"Git: Add..."
 			],
 			[
 				"git status",
 				"Git: Status"
+			],
+			[
+				"git am",
+				"Git: Amend Commit"
+			],
+			[
+				"git ad",
+				"Git: Add Current File"
+			],
+			[
+				"git co",
+				"Git: Commit"
+			],
+			[
+				"git commit",
+				"Git: Quick Commit"
+			],
+			[
+				"git add ",
+				"Git: Add..."
+			],
+			[
+				"git qui",
+				"Git: Quick Commit"
+			],
+			[
+				"git comm",
+				"Git: Commit"
 			],
 			[
 				"git stat",
@@ -70,10 +109,6 @@
 			[
 				"git push",
 				"Git: Push"
-			],
-			[
-				"git commit",
-				"Git: Quick Commit"
 			],
 			[
 				"git reset",
@@ -133,17 +168,25 @@
 	},
 	"file_history":
 	[
-		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/jussinen.github.com.sublime-project",
-		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/_layouts/default.html",
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/humans.txt",
 		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/web-dev.html",
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/lds.html",
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/ramblings.html",
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/todo.txt",
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/readme.md",
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/crigler-najjar-syndrome-type-2.html",
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/css/main.css",
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/_layouts/default.html",
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/_layouts/page.html",
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/_layouts/post.html",
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/jussinen.github.sublime-workspace",
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/jussinen.github.com.sublime-workspace",
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/jussinen.github.com.sublime-project",
 		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/ramblings.rss",
 		"/C/Users/jfolley/AppData/Roaming/Sublime Text 2/Packages/User/Jekyll.sublime-build",
 		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/_site/jussinen.github.com",
 		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/_site/lds.html",
 		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/lds.rss",
-		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/css/main.css",
-		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/lds.html",
-		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/ramblings.html",
 		"/C/Users/jfolley/AppData/Roaming/Sublime Text 2/Packages/User/jekyll.sublime-build",
 		"/C/Users/jfolley/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
 		"/C/Users/jfolley/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
@@ -174,6 +217,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"footer",
 			"console"
 		],
 		"highlight": true,
@@ -182,6 +226,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			".footer"
 		],
 		"reverse": true,
 		"show_context": true,
@@ -192,29 +237,28 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 4,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "web-dev.html",
+					"file": "projects.html",
 					"settings":
 					{
-						"buffer_size": 659,
+						"buffer_size": 900,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								112,
-								132
+								467,
+								467
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -224,51 +268,51 @@
 				},
 				{
 					"buffer": 1,
-					"file": "lds.html",
+					"file": "css/main.css",
 					"settings":
 					{
-						"buffer_size": 639,
+						"buffer_size": 3276,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								115,
-								115
+								1919,
+								1919
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1813.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "ramblings.html",
+					"file": "js/main.js",
 					"settings":
 					{
-						"buffer_size": 669,
+						"buffer_size": 24,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								239,
-								239
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -278,24 +322,79 @@
 				},
 				{
 					"buffer": 3,
-					"file": "todo.txt",
+					"file": "_layouts/default.html",
 					"settings":
 					{
-						"buffer_size": 120,
+						"buffer_size": 5560,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								120,
-								120
+								3542,
+								3542
 							]
 						],
 						"settings":
 						{
-							"auto_name": "TODO:",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1460.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "_layouts/post.html",
+					"settings":
+					{
+						"buffer_size": 1123,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								433,
+								433
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "_posts/2013-02-13-Crafted.Volva.markup",
+					"settings":
+					{
+						"buffer_size": 4551,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								153,
+								153
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -347,7 +446,7 @@
 	},
 	"replace":
 	{
-		"height": 0.0
+		"height": 66.0
 	},
 	"save_all_on_build": true,
 	"select_file":
