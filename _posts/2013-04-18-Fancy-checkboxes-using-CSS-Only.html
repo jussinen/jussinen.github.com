@@ -27,13 +27,6 @@ description: "<h2>Styling checkboxes</h2>
         &lt;i class="icon-check"></i>
         This is a checkbox
     &lt;/label>
-&lt;/div>
-
-&lt;div class="well">
-    &lt;label class="checkbox">
-        &lt;input type="checkbox" />
-        This is another checkbox
-    &lt;/label>
 &lt;/div></pre>
 <pre class="brush: css">
 .well{
@@ -63,3 +56,4 @@ description: "<h2>Styling checkboxes</h2>
 <p>The trick involves two factors. When clicking on a <code>label</code> associated to the checkbox, the checkbox state is updated. We can click on the <code>label</code> and although the checkbox is hidden, it will have updated the checkbox.</p>
 <p>The following factor is that it is possible to style elements based on their siblings, however the siblings need to precede the element. This is the <code>~</code> selector.</p>
 <p>We can therefore apply styling (simple <code>display</code> rules) to the icons based on the sibling checkbox state.</p>
+<p>Here's an example of this working: <a href="http://jsfiddle.net/jussinen/2Nvj2/3/" target="_blank">http://jsfiddle.net/jussinen/2Nvj2/3/</a>.</p>
