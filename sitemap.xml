@@ -27,17 +27,11 @@
 	<priority>0.6</priority>
 </url> 
 <url>
-	<loc>http://jussinen.com/lds.html</loc>
+    <loc>http://jussinen.com/crigler-najjar-syndrome-type-2.html</loc>
 	<lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.6</priority>
-</url> 
-<url>
-	<loc>http://jussinen.com/ramblings.html</loc>
-	<lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-	<changefreq>monthly</changefreq>
-	<priority>0.6</priority>
-</url> 
+</url>  
 {% for post in site.posts %} <url>
 	<loc>http://jussinen.com{{ post.url }}</loc>
 	<lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
