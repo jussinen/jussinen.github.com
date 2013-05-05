@@ -1,0 +1,55 @@
+---
+layout: post
+title: "Fancy checkbox using CSS only"
+tags: web-dev
+date: 2013-04-18
+author: John Folley
+allow_comments: true
+description: "A description on styling checkboxes using CSS only"
+summary: "<h2>Styling checkboxes</h2><p>Form elements have always been difficult to style up as we want. However thanks to the sibling selector and the checkbox trick, at least the checkbox element is easy to 'style'.</p><p>Some solutions attempt to mimick the behaviour of the checkbox using javascript and image replacement. Effectively this involves hiding the checkbox, replacing instead with a fancy checkbox image. Click events are on the image element as well as hover events perhaps to fully mimick the checkbox.</p><p>This works, however there are a few issues with this: javascript is required and while most users will have javscript enabled, there's an overhead in the added javscript required. This will be an extra HTTP request, not including the images replaced.</p><p>Also, javscript processing and events is quite costly. For a single checkbox on a page, it doesn't matter much but in a table of dozens of rows with one or more checkboxes this starts to slow down the page.</p><p>There is however a different solution: using the 'checkbox' hack, we can style checkboxes using CSS only.</p>"
+---
+<h2>Styling checkboxes</h2>
+<p>Form elements have always been difficult to style up as we want. However thanks to the sibling selector and the checkbox trick, at least the checkbox element is easy to 'style'.</p>
+<p>Some solutions attempt to mimick the behaviour of the checkbox using javascript and image replacement. Effectively this involves hiding the checkbox, replacing instead with a fancy checkbox image. Click events are on the image element as well as hover events perhaps to fully mimick the checkbox.</p>
+<p>This works, however there are a few issues with this: javascript is required and while most users will have javscript enabled, there's an overhead in the added javscript required. This will be an extra HTTP request, not including the images replaced.</p>
+<p>Also, javscript processing and events is quite costly. For a single checkbox on a page, it doesn't matter much but in a table of dozens of rows with one or more checkboxes this starts to slow down the page.</p>
+<p>There is however a different solution: using the "checkbox" hack, we can style checkboxes using CSS only.</p>
+<h2>The code first</h2>
+<pre class="brush: html">
+&lt;div class="well">
+    &lt;label class="checkbox fancy-checkbox">
+        &lt;input type="checkbox" runat="server" />
+        &lt;i class="icon-check-empty"></i>
+        &lt;i class="icon-check"></i>
+        This is a checkbox
+    &lt;/label>
+&lt;/div></pre>
+<pre class="brush: css">
+.well{
+    margin-top:1em;
+}
+
+.fancy-checkbox i.icon-check,
+.fancy-checkbox i.icon-check-empty{
+    float: left;
+    margin-left: -20px;
+    font-size:18px;
+    vertical-align: bottom;
+    margin-top:2px;
+}
+
+.fancy-checkbox input[type=checkbox],
+.fancy-checkbox i.icon-check,
+.fancy-checkbox [type="checkbox"]:checked ~ i.icon-check-empty{
+    display:none;
+}
+.fancy-checkbox i.icon-check-empty,
+.fancy-checkbox input[type=checkbox]:checked ~ i.icon-check{
+    display:inline-block;
+}</pre>
+<h2>How does it work?</h2>
+<p>The above code uses <a href="http://getbootstrap.com" target="_blank">Bootstrap</a> and <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a> to create the two states: checked and unchecked. These are represented by the two <code>i</code> elements.</p>
+<p>The trick involves two factors. When clicking on a <code>label</code> associated to the checkbox, the checkbox state is updated. We can click on the <code>label</code> and although the checkbox is hidden, it will have updated the checkbox.</p>
+<p>The following factor is that it is possible to style elements based on their siblings, however the siblings need to precede the element. This is the <code>~</code> selector.</p>
+<p>We can therefore apply styling (simple <code>display</code> rules) to the icons based on the sibling checkbox state.</p>
+<p>Here's an example of this working: <a href="http://jsfiddle.net/jussinen/2Nvj2/3/" target="_blank">http://jsfiddle.net/jussinen/2Nvj2/3/</a>.</p>
