@@ -8,50 +8,26 @@
 	"buffers":
 	[
 		{
-			"file": "projects.html",
+			"file": "_posts/2013-04-18-Fancy-checkboxes-using-CSS-Only.html",
 			"settings":
 			{
-				"buffer_size": 900,
+				"buffer_size": 4235,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "css/main.css",
+			"file": "_posts/2013-02-13-Crafted.Volva.html",
 			"settings":
 			{
-				"buffer_size": 3276,
+				"buffer_size": 4822,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "js/main.js",
+			"file": "blog.rss",
 			"settings":
 			{
-				"buffer_size": 24,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "_layouts/default.html",
-			"settings":
-			{
-				"buffer_size": 5560,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "_layouts/post.html",
-			"settings":
-			{
-				"buffer_size": 1123,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "_posts/2013-02-13-Crafted.Volva.markup",
-			"settings":
-			{
-				"buffer_size": 4551,
+				"buffer_size": 815,
 				"line_ending": "Windows"
 			}
 		}
@@ -68,6 +44,26 @@
 			],
 			[
 				"git add",
+				"Git: Add Current File"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"git comm",
+				"Git: Commit"
+			],
+			[
+				"git ad",
+				"Git: Add Current File"
+			],
+			[
+				"git commit",
+				"Git: Quick Commit"
+			],
+			[
+				"git add ",
 				"Git: Add..."
 			],
 			[
@@ -79,36 +75,16 @@
 				"Git: Amend Commit"
 			],
 			[
-				"git ad",
-				"Git: Add Current File"
-			],
-			[
 				"git co",
 				"Git: Commit"
-			],
-			[
-				"git commit",
-				"Git: Quick Commit"
-			],
-			[
-				"git add ",
-				"Git: Add..."
 			],
 			[
 				"git qui",
 				"Git: Quick Commit"
 			],
 			[
-				"git comm",
-				"Git: Commit"
-			],
-			[
 				"git stat",
 				"Git: Status"
-			],
-			[
-				"git push",
-				"Git: Push"
 			],
 			[
 				"git reset",
@@ -168,17 +144,39 @@
 	},
 	"file_history":
 	[
-		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/humans.txt",
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/index.html",
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/_layouts/default.html",
 		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/web-dev.html",
-		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/lds.html",
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/projects.html",
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/css/main.css",
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/js/main.js",
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/js/script.combined.js",
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/js/script.min.js",
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/_layouts/post.html",
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/_posts/2013-02-13-Crafted.Volva.html",
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/_posts/2012-12-05-Improving-Email-Deliverability.html",
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/_posts/2013-02-03-Crafted.Config.html",
 		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/ramblings.html",
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/lds.html",
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/_posts/2013-04-06-CSS-Background-Linear-Gradients.html",
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/js/libs/syntax/shCore.js",
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/js/libs/syntax/shBrushSql.js",
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/js/libs/syntax/shBrushSass.js",
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/js/libs/syntax/shBrushPowerShell.js",
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/js/libs/syntax/shBrushPlain.js",
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/js/libs/syntax/shBrushJScript.js",
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/js/libs/syntax/shBrushDiff.js",
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/js/libs/syntax/shBrushCss.js",
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/js/libs/syntax/shBrushCSharp.js",
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/js/libs/syntax/shBrushBash.js",
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/css/style.scss",
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/css/style.css",
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/css/style.min.css",
+		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/humans.txt",
 		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/todo.txt",
 		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/readme.md",
 		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/crigler-najjar-syndrome-type-2.html",
-		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/css/main.css",
-		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/_layouts/default.html",
 		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/_layouts/page.html",
-		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/_layouts/post.html",
 		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/jussinen.github.sublime-workspace",
 		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/jussinen.github.com.sublime-workspace",
 		"/C/Users/jfolley/Documents/GitHub/jussinen.github.com/jussinen.github.com.sublime-project",
@@ -217,6 +215,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"heading",
+			"container",
+			"class=\"offsite-link-inline\" ",
+			"<p><h2><strong>",
+			"</strong></h2></p>",
+			"&rsquo;",
+			"<code>HELO</code>",
 			"footer",
 			"console"
 		],
@@ -226,6 +231,11 @@
 		"regex": false,
 		"replace_history":
 		[
+			"",
+			"<h2>",
+			"</h2>",
+			"'",
+			"HELO",
 			".footer"
 		],
 		"reverse": true,
@@ -237,23 +247,23 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "projects.html",
+					"file": "_posts/2013-04-18-Fancy-checkboxes-using-CSS-Only.html",
 					"settings":
 					{
-						"buffer_size": 900,
+						"buffer_size": 4235,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								467,
-								467
+								1250,
+								1250
 							]
 						],
 						"settings":
@@ -268,100 +278,18 @@
 				},
 				{
 					"buffer": 1,
-					"file": "css/main.css",
+					"file": "_posts/2013-02-13-Crafted.Volva.html",
 					"settings":
 					{
-						"buffer_size": 3276,
+						"buffer_size": 4822,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1919,
-								1919
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1813.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "js/main.js",
-					"settings":
-					{
-						"buffer_size": 24,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "_layouts/default.html",
-					"settings":
-					{
-						"buffer_size": 5560,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3542,
-								3542
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1460.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "_layouts/post.html",
-					"settings":
-					{
-						"buffer_size": 1123,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								433,
-								433
+								154,
+								165
 							]
 						],
 						"settings":
@@ -376,24 +304,24 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "_posts/2013-02-13-Crafted.Volva.markup",
+					"buffer": 2,
+					"file": "blog.rss",
 					"settings":
 					{
-						"buffer_size": 4551,
+						"buffer_size": 815,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								153,
-								153
+								703,
+								703
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"syntax": "Packages/XML/XML.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
